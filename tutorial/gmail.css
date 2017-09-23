@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    padding: 3.5em;
+}
+
+.header .header-container {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.header .header-container .title {
+    display: block;
+    background-image: url('./logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 3.5em;
+    width: 100%;
+}
+
+.header .header-container .subtitle {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+    line-height: 1.8em;
+    margin-bottom: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main {
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 3em 5em;
+    width: 80%;
+}
+
+.main .tutorial-type {
+    border-bottom: 1px solid #ffc813;
+    font-size: 2.4em;
+    margin: 0 auto;
+    padding-bottom: 0.25em;
+    text-align: center;
+    width: 60%;
+}
+
+.step-container .step-title {
+    margin-top: 5em;
+}
+
+.step-container .step-title .title-decoration {
+    border: 2px solid #ffc813;
+    border-radius: 5px;
+    color: #ffc813;
+    font-size: 1.8em;
+    padding: 0.5em 0.7em;
+    text-transform: uppercase;
+    text-shadow: 1px 0px 3px rgba(0, 0, 0, 0.105);
+}
+
+.step-container .step-content {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.step-container .step-content .step-image {
+    margin-top: 3em;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+}
+
+.step-container .step-content .step-text {
+    font-size: 1.8em;
+    line-height: 1.8;
+    padding: 1.5em 0;
+    width: 100%;
+}
+
+.step-container .step-content .step-text>strong {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.step-container .step-content .step-text>a {
+    color: #337ab7;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+}
+
+.step-container .step-content .step-text>a:hover {
+    color: #ffc813;
+}
+
+@media screen and (max-width: 960px) {
+    .header .header-container,
+    .main {
+        width: 95%;
+    }
+    body {
+        padding: 2em 0;
+    }
+    .main .tutorial-type {
+        width: 100%;
+    }
+}
